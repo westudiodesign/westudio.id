@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+.nav-link{color:white}
+.bg-ku{background-color:#0099ff;}
+.bg-header {background-image: linear-gradient(to right, #0575e6, #021b79);}
+.westudio-section {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	padding: 60px 0;
+	
+}
+.header-image {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 95vh;
+	z-index: 1;
+}
+.img-section{max-width: 200px;}
+.icon-section{background:#0099ff; border-radius: 50%; color: white; width: 40px; height: 40px }
+@media only screen and (max-width: 750px) {
+  .header-image {display: none;}
+  .img-section {display: none;}
+}
+
+
+/* PORTOFOLIO */
+.overlay > .img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+}
+
+
+
+.overlay > .img-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: rgba(0, 0, 0, .5);
+
+}
+.overlay:hover > .img-fluid {
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.overlay:hover .img-hover {
+  opacity: 1;
+}
+
+.overlay > .img-hover > .text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay > .img-hover > .link {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  border: 2px solid #FFFFFF;
+  padding: 5px 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.overlay > .img-hover > .link:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
